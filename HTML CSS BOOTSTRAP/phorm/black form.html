@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style type="text/css">
+    body{
+      background-color: azure;
+    }
+    .forma{
+      background-color: rgba(0, 0, 0, 0.709);
+      color:white;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 20%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 200px;
+    }
+    input[type=text],input[type=email],input[type=password]{
+      width: 100%;
+      height: 45px;
+      box-sizing: border-box;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      background-color: rgba(0, 0, 0, 0.709);
+      border-radius: 5px;
+      overflow: none;
+      transition: 0.5s;
+      color:white;
+      border: 1px solid white;
+    }
+    ::placeholder{
+      color:white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    input[type=submit]{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      outline: none;
+      background-origin: none;
+      background-color: rgb(229, 255, 0);
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+      border: 1px solid rgb(229, 255, 0);
+      outline: none;
+    }
+    input[type=submit]:hover{
+      background-color: rgb(194, 211, 36);
+    }
+  </style>
+  <script type="text/javascript">
+    function funkcija(){
+      let x = document.forms['myform']['name'].value;
+      let y = document.forms['myform']['uname'].value;
+      let z = document.forms['myform']['email'].value;
+      let w = document.forms['myform']['pass'].value;
+      let t = document.forms['myform']['cpass'].value;
+      if(x == "" || y == "" || z == "" || w == "" || t == ""){
+        alert("Fill all fields!");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="forma">
+  <h1 style="font-weight: normal;text-align: center;">Sign up</h1>
+  <form action="#" onsubmit="return funkcija()" name="myform">
+    <input type="text" placeholder="Name" id="name" name="name"><br>
+    <input type="text" placeholder="Username" id="uname" name="uname"><br>
+    <input type="email" placeholder="Email" id="email" name="email"><br>
+    <input type="password" placeholder="Password" id="pass" name="pass"><br>
+    <input type="password" placeholder="Confirm password" id="cpass" name="cpass"><br>
+    <input type="submit" value="Sign Up">
+  </form>
+</div>
+</body>
+</html>

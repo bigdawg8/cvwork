@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style>
+    .galerija{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .gal img{
+      width: 400px;
+      height: 300px;
+      opacity: 0.7;
+    }
+    .gal{
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+    .text{
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: normal;
+    }
+    .gal img:hover{
+      opacity: 1.0;
+    }
+    .gal:hover{
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<div class="galerija">
+  <div class="gal" style="margin-left: 70px;">
+    <a href="#">
+      <img src="img.jpg" alt="image">
+    </a>
+    <div class="text">This is bottom text</div>
+  </div>
+  <div class="gal">
+    <a href="#">
+      <img src="img.jpg" alt="image">
+    </a>
+    <div class="text">This is bottom text</div>
+  </div>
+  <div class="gal">
+    <a href="#">
+      <img src="img.jpg" alt="image">
+    </a>
+    <div class="text">This is bottom text</div>
+  </div>
+  <div class="gal">
+    <a href="#">
+      <img src="img.jpg" alt="image">
+    </a>
+    <div class="text">This is bottom text</div>
+  </div>
+</div>
+</body>
+</html>

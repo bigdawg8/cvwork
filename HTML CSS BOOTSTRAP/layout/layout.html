@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <style type="text/css">
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .header {
+      background-color: #ede4e4;
+      text-align: center;
+      padding: 10px;
+    }
+    .nav ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      height: 35px;
+    }
+    .nav li a {
+      text-decoration: none;
+      display: block;
+      color: white;
+      font-size: 20px;
+      margin: 6px;
+      text-align: center;
+      margin-right: 10px;
+    }
+    .nav li {
+      float:left;
+    }
+    .cc {
+      overflow: hidden;
+    }
+    .column {
+      padding: 15px;
+      width: 33.33%;
+      box-sizing: border-box; /* Dodajemo ovo da se padding ne računa u širinu kolone */
+      float: left;
+    }
+    .cc::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+  <p>Resize the browser window to see the responsive effect</p>
+</div>
+
+<div class="nav">
+  <ul> 
+    <li><a href="https://www.google.com">Link</a></li>
+    <li><a href="https://www.google.com">Link</a></li>
+    <li><a href="https://www.google.com">Link</a></li>
+  </ul>
+</div>
+
+<div class="cc">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+</body>
+</html>

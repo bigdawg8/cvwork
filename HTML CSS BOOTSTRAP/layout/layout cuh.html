@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style type="text/css">
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    header{
+      background-color: aqua;
+      text-align: center;
+      color:black;
+      padding: 10px;
+    }
+    .navbar{
+      background-color: darkblue;
+      overflow:hidden;
+    }
+    .navbar ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar ul li {
+      display: inline-block;
+    }
+    .navbar ul li a{
+      color:white;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+      display: block;
+    }
+    .dropdown{
+      display: inline-block;
+    }
+    .content{
+      display: none;
+      position: absolute;
+      min-width: 100px;
+    }
+    .content a{
+      display: block;
+      text-decoration: none;
+      color:white;
+      font-size: 20px;
+      background-color: rgb(25, 118, 225);
+      padding: 10px;
+    }
+    .dropdown:hover .content{
+      display: block;
+    }
+    .content a:hover{
+      background-color: rgb(19, 19, 142);
+    }
+    .navbar ul li:hover{
+      background-color: rgb(111, 52, 212);
+    }
+    .row{
+      display: inline-block;
+    }
+    .article{
+      width: 33.33%;
+      box-sizing: border-box;
+      padding: 10px;
+      float:left
+    }
+    footer{
+      background-color: green;
+      padding: 10px;
+      text-align: center;
+    }
+    @media screen and (max-width:800px){
+      header,.navbar,.article,footer{
+        width: 100%;
+      }
+      .navbar ul li{
+        display: block;
+        text-align: center;
+      }
+      .dropdown:hover .content{
+        width: 100%;
+        text-align: center;
+      }
+      .article{
+        padding: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Header</h1>
+  <p>Resize the browser window to see the responsive effect  </p>
+</header>
+<div class="navbar">
+  <ul>  
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="dropdown">
+      <a href="#" class="button">Link</a>
+      <div class="content">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="row">
+  <div class="article">
+    <h2>Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  <div class="article">
+    <h2>Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  <div class="article">
+    <h2>Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+<footer>FOOTER</footer>
+</body>
+</html>

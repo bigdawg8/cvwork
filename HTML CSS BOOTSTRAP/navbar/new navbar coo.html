@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style type="text/css">
+    .navbar{
+      overflow: hidden;
+      background-color: rgb(26, 24, 24);
+    }
+    .navbar ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar ul li{
+      display: inline-block;
+    }
+    .navbar ul li a{
+      display: block;
+      text-decoration: none;
+      color:white;
+      padding: 10px;
+      font-size: 15px;
+    }
+    .right{
+      float:right;
+    }
+    .dropdown{
+      display: inline-block;
+    }
+    .content{
+      display: none;
+      position: absolute;
+      min-width: 110px;
+    }
+    .content a{
+      color:white;
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 15px;
+      background-color: rgb(27, 25, 25);
+    }
+    .dropdown:hover .content{
+      display: block;
+    }
+    .navbar ul li:not(.active):hover{
+      background-color: aqua;
+    }
+    .content a:hover{
+      background-color: aqua;
+    }
+    .active{
+      background-color: green;
+    }
+    @media screen and (max-width:700px){
+      .navbar ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .dropdown:hover .content{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="navbar">
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+    <li class="dropdown">
+      <a href="#" class="button">Services</a>
+      <div class="content">
+        <a href="#">Number 1</a>
+        <a href="#">Number 2</a>
+        <a href="#">Number 3</a>
+      </div>
+    </li>
+    <li class="right"><a href="#">About</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

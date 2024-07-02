@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GOAT</title>
+	<style type="text/css">
+		body{
+			margin:0;
+			padding: 0;
+		}
+		header{
+			background-color: #dbd7cc;
+			padding: 15px;
+			text-align: center;
+			height: 100px;
+		}
+		.nav{
+			background-color: black;
+			overflow:hidden;
+			width: 100%;
+		}
+		.nav ul{
+			padding: 0;
+			margin: 0;
+			list-style-type:none;
+		}
+		.nav ul li{
+			float:left;
+			padding: 10px;
+			font-size: 20px;
+		}
+		.nav ul li a{
+			text-decoration: none;
+			color: white;
+		}
+		.nav ul li:hover{
+			background-color: #7e7f82;
+		}
+		.pojedinacni_div{
+			float:left;
+			width: 33.33%;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		.skup_div::after { /*resava problem da footer obaja celu stranu*/
+  		content: "";
+  		display: table;
+  		clear: both;
+		}
+		.footer{
+			background-color: #dbd7cc;
+			height: 40px;
+			text-align: center;
+			padding: 10px;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+	<h2>Header</h2>
+	<p>Resize the browser window to see the responsive effect.</p>
+</header>
+
+<div class="nav">
+	<ul>
+		<li><a href="#">Link</a></li>
+		<li><a href="#">Link</a></li>
+		<li><a href="#">Link</a></li>
+	</ul>
+</div>
+
+<div class="skup_div">
+	<div class="pojedinacni_div">
+		<h2>Column</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+	</div>
+	<div class="pojedinacni_div">
+		<h2>Column</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+	</div>
+	<div class="pojedinacni_div">
+		<h2>Column</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+	</div>
+</div>
+
+<div class="footer">Footer</div>
+</body>
+</html>

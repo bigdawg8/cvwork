@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      background-color: aqua;
+    }
+    .container{
+      background-color: white;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+  </style>
+  <script type="text/javascript">
+    function funkcija(){
+      let x = document.forms['myform']['name'].value;
+      let y = document.forms['myform']['email'].value;
+      let z = document.forms['myform']['age'].value;
+      if(x == "" || y == "" || z == ""){
+        alert("Fill all the fields!");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+  <h1 style="text-align: center;">GeeksforGeeks Survey Form</h1>
+  <form action="#" name="myform" onsubmit="return funkcija()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" placeholder="Enter your name" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" id="age" placeholder="Enter your age" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="select">Which option best describes you?</label>
+      <select name="select" id="select" class="form-control">
+        <option value="">Select an option</option>
+        <option value="cuh">cuh</option>
+        <option value="cuh">cuh</option>
+        <option value="cuh">cuh</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="radio">Would you recommend this shit?</label><br>
+      <label for="radio" class="radio-inline"><input type="radio" name="radio1" checked> Yes</label>
+      <label for="radio" class="radio-inline"><input type="radio" name="radio1"> No</label>
+      <label for="radio" class="radio-inline"><input type="radio" name="radio1"> Maybe</label>
+    </div>
+    <div class="form-group">
+      <label for="checkbox">Languages and Frameworks known <small>(Check all that apply)</small></label><br>
+      <label for="checkxo" class="checkbox-inline"><input type="checkbox" name="checkbox1"> HTML</label>
+      <label for="checkxo" class="checkbox-inline"><input type="checkbox" name="checkbox1"> CSS</label>
+      <label for="checkxo" class="checkbox-inline"><input type="checkbox" name="checkbox1"> JS</label>
+      <label for="checkxo" class="checkbox-inline"><input type="checkbox" name="checkbox1"> SQL</label>
+      <label for="checkxo" class="checkbox-inline"><input type="checkbox" name="checkbox1"> BS</label>
+    </div>
+    <div class="form-group">
+      <label for="textarea">Any comment or suggestion</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="5" class="form-control" placeholder="Write something here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info btn-block">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

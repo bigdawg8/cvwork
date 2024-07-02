@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forma</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+      background-color: #49c96a;
+      font-size: 16px;
+       font-family: verdana;
+       text-decoration: none;
+    }
+    h1{
+      text-align: center;
+      font-family: verdana;
+      font-size: 35px;
+    }
+    .forma{
+      background-color: white;
+      width:30%;
+      height: auto;
+      border-radius: 5px;
+      margin-left: auto; /*centrira ga na sredinu bez centriranje texta*/
+      margin-right:auto; /*centrira ga na sredinu bez centriranje texta*/
+      padding: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2);
+    }
+    input[type=text],input[type=email]{
+      width: 98.5%;
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    select{
+      width: 85%;
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+    input[type=radio]{
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    input[type=checkbox]{
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    textarea{
+      width: 98.5%;
+      margin-top: 8px;
+      margin-bottom: 35px;
+    }
+    input[type=submit]{
+      width: 100%;
+      height: 40px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 20px;
+      background-color: #2eb34f;
+      border:0px;
+    }
+    input[type=submit]:hover{
+      background-color: #3ac75d;
+    }
+    .text{
+      margin-bottom: 20px;
+    }
+  </style>
+  <script type="text/javascript">
+    function validate(){
+    var firstname = document.forms["forma"]["fname"].value;
+    var adress = document.forms["forma"]["email"].value;
+    var age = document.forms["forma"]["age"].value;
+      if(firstname == "" || adress == "" || age == ""){
+        alert("Prazno polje");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+<h1>GeeksforGeeks Survey Form</h1>
+
+<div class="forma">
+  <form action="#practice" method="post" name="forma" onsubmit="return validate()">
+
+    <div class="text" style="margin-top:15px">
+    <label for="fname">Name</label><br>
+    <input type="text" name="fname" placeholder="Enter your name"><br>
+    </div>
+
+    <div class="text">
+    <label for="email">Email</label><br>
+    <input type="email" name="email" placeholder="Enter your email"><br>
+    </div>
+
+    <div class="text">
+    <label for="age">Age</label><br>
+    <input type="text" name="age" placeholder="Enter your age" style="margin-bottom: 15px;"><br>
+    </div>
+
+    <div class="opcije">
+    <label for="option1">Which option best describes you?</label><br>
+    <select>
+      <option>CEO</option>
+      <option>Vice</option>
+    </select>
+    </div>
+
+    <div class="radio">
+    <label for="radio1">Would you recommend ?</label><br>
+    <input type="radio" name="radio1" style="margin-top: 10px;">Yes<br>
+    <input type="radio" name="radio1">No<br>
+    <input type="radio" name="radio1" style="margin-bottom:30px">Maybe  
+    </div>
+
+    <div class="checkpoint">
+      <label for="checkbox1">Languages and Fremwork?<small>(Check all that aplly)</small></label><br>
+      <input type="checkbox" name="HTML" style="margin-top: 10px;">HTML<br>
+      <input type="checkbox" name="CSS">CSS<br>
+      <input type="checkbox" name="JS" style="margin-bottom:30px">JS      
+    </div>
+
+    <div class="textarea">
+      <label for="textarea1">Any comments?</label><br>
+      <textarea rows="4"></textarea>
+    </div><br>
+
+    <input type="submit" name="dugme" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>

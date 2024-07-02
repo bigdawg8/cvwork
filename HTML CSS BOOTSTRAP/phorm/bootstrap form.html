@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      background-color: aqua;
+    }
+    .container{
+      background-color: white;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+  <script type="text/javascript">
+    function funkcija(){
+      let x = document.forms['myform']['fname'].value;
+      let y = document.forms['myform']['email'].value;
+      let z = document.forms['myform']['age'].value;
+      if(x == "" || y == "" || z == ""){
+        alert("Fill all the fields!");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+  <h1 style="text-align: center;">GeeksforGeeks Survey Form</h1>
+  <form action="#" onsubmit="return funkcija()" name="myform" id="myform">
+    <div class="form-group">
+      <label for="fname">Name</label>
+      <input type="text" placeholder="Enter your name" class="form-control" id="fname">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter your email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" placeholder="Enter your age" class="form-control" id="age">
+    </div>
+    <div class="form-group">
+      <label for="select">Which option best describes you?</label>
+      <select name="select" id="select" class="form-control">
+        <option value="Selecter">Select an option</option>
+        <option value="Cuh">Cuh</option>
+        <option value="Cuh">Cuh</option>
+        <option value="Cuh">Cuh</option>
+        <option value="Cuh">Cuh</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="radio">Would you recommend GeeksforGeeks to a friend?</label>
+      <div class="radio">
+        <label><input type="radio" name="radio1" checked>Yes</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="radio1">No</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="radio1">Maybe</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="checkbox">Languages and Frameworks known <small>(Check all that apply)</small></label>
+      <div class="checkbox">
+        <label><input type="checkbox" name="checkbox">HTML</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="checkbox">CSS</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="checkbox">JS</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="checkbox">SQL</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="checkbox">BS</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="textarea">Any comment or suggestion</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="5" class="form-control" placeholder="Write something here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info btn-block">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

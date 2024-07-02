@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style type="text/css">
+    header{
+      background-color: #cfdfe8;
+      text-align: center;
+      font-size: 25px;
+    }
+    .navbar{
+      overflow:hidden;
+      margin-top: 10px;
+      background-color: #cfdfe8;
+      margin-bottom: 20px;
+    }
+    .navbar ul{
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    .navbar ul li{
+      float:left;
+      padding: 10px;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    .navbar ul li:hover{
+      background-color: skyblue;
+    }
+    .prvi{
+      margin-left:430px;
+    }
+    .feature{
+      background-color: #cfdfe8;
+      width:100%;
+      text-align: center;
+      height: 200px;
+    }
+    .group{
+      width:100%;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .column{
+      display: inline-block;
+      width: 33.1%;
+      box-sizing: border-box;
+      background-color: #cfdfe8;
+      text-align: center;
+      height: 100px;
+    }
+    .group::after { /*resava problem da footer obaja celu stranu*/
+      content: "";
+      display: table;
+      clear: both;
+    }
+    footer{
+      background-color: #cfdfe8;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  Logo
+</header>
+<div class="navbar">
+  <ul>  
+    <li class="prvi"><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+<div class="feature">Feature</div>
+<div class="group">
+  <div class="column">Column</div>
+  <div class="column">Column</div>
+  <div class="column">Column</div>
+</div>
+<footer>
+  Footer
+</footer>
+
+</body>
+</html>

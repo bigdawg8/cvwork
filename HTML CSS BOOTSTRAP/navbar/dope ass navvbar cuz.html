@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GOAT</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+        }
+        .navbar ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .navbar ul li{
+            display: inline-block;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            display: block;
+            padding: 10px;
+            font-size: 25px;
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        .content{
+            position: absolute;
+            display: none;
+            min-width: 130px;
+        }
+        .content a{
+            display: block;
+             text-decoration: none;
+            color:white;
+            padding: 10px;
+            font-size: 25px;
+            background-color: red;
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+        .content a:hover{
+            background-color: black;
+        }
+        @media screen and (max-width:768px){
+            .navbar ul li{
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown:hover .content{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Payment</a></li>
+        <li class="dropdown">
+            <a href="#" class="button">Menu</a>
+            <div class="content">
+                <a href="#">Item</a>
+                <a href="#">Item</a>
+                <a href="#">Item</a>
+            </div>
+        </li>
+        <li style="float:right;"><a href="#">Sign in</a></li>
+        <li style="float:right;"><a href="#">Sign up</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

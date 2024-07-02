@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GOAT</title>
+	<style type="text/css">
+		.button{
+			background-color: green;
+			color:white;
+			font-size: 20px;
+			padding: 20px;
+			border:none;
+			cursor: pointer;
+		}
+		.dropdown{
+			position: relative; /*roditeljski element i definise content u odnosu njega*/
+			display: inline-block;
+		}
+		.content{
+			display: none;/*ne vidi se text content-a*/
+			position: absolute; /*stavlja content dropdown-a u unutar buttona*/
+			background-color: #f9f9f9;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+		}
+		.content a{
+			color:black;
+			padding:12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.content a:hover {background-color: #f1f1f1}
+		.dropdown:hover .content { /*kada se predje misem preko dropdown-a prikazuje se njegov content*/
+  			display: block;/*content se prikazuje jedan ispod drugog*/
+		}
+		.dropdown:hover .button {
+  			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+<div class="dropdown">
+<button class="button">Menu</button>
+<div class="content">
+	<a href="#">Youtube</a>
+	<a href="#">Youtube</a>
+	<a href="#">Youtube</a>
+</div>
+</div>
+
+
+</body>
+</html>

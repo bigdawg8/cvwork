@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style type="text/css">
+    body{
+      background-color: #e6dfdf;
+      
+    }
+    header{
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+    }
+    .navbar{
+      background-color: black;
+      overflow:hidden;
+    }
+    .navbar ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar ul li{
+      float:left;
+      padding: 10px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color:white;
+      font-size: 30px;
+    }
+    .dropdown{
+      display: inline-block;
+    }
+    .content{
+      display: none;
+      position:absolute;
+      min-width: 138px;
+      margin-top: 10px;
+    }
+    .content a{
+      display: block;
+      color:black;
+      background-color: gray;
+      font-size: 30px;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .dropdown:hover .content{
+      display: block;
+    }
+    .content a:hover{
+      background-color: red;
+    }
+    .navbar ul li:hover{
+      background-color: red;
+    }
+    .levi{
+      width:70%;
+      float:left;
+    }
+    article{
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: white;
+    }
+    .desni{
+      width: 29%;
+      float:left;
+      margin-left: 18px;
+    }
+    .about{
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .popular{
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .follow{
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .row::after { /*resava problem da footer obaja celu stranu*/
+      content: "";
+      display: table;
+      clear: both;
+    }
+    footer{
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      background-color: gray;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width:800px){
+      header, .levi ,.desni, footer{
+        width:100%;
+      }
+      .popular,.follow,.about{
+        margin-left: 0;
+      }
+      .desni{
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1 style="font-size: 50px;">My website</h1>
+  <p>Resize the browser window to see the effect.</p>
+</header>
+<div class="navbar">
+  <ul>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="dropdown" style="float:right">
+      <a href="#" class="button">Dropdown</a>
+      <div class="content">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="row">
+  <div class="levi">
+    <article style="margin-top: 10px;">
+      <h2>Title Heading</h2>
+      <p><small><i>Title desctiption , Dec 7 , 2027</i></small></p>
+      <img src="img.jpg">
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </article>
+     <article>
+      <h2>Title Heading</h2>
+      <p><small><i>Title desctiption , Dec 7 , 2027</i></small></p>
+      <img src="img.jpg">
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </article>
+  </div>
+  <div class="desni">
+    <div class="about">
+      <h2>About me</h2>
+      <img src="img.jpg" width="100%" height="auto">
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="popular">
+      <h2>Popular post</h2>
+      <img src="img.jpg" width="100%" height="auto">
+    </div>
+    <div class="follow">
+      <h2>Follow Me</h2>
+      <p>Some text</p>
+    </div>
+  </div>
+</div>
+<footer>THIS A MF FOOTER</footer>
+</body>
+</html>

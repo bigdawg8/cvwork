@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GOAT</title>
+	<style type="text/css">
+		/*@media uradi glupane*/
+		body{
+			background-color: #e6f0e9;
+		}
+		.header{
+			background-color: white;
+			text-align: center;
+			padding: 15px;
+		}
+		.nav{
+			overflow: hidden;
+			background-color: black;
+			margin-bottom: 0px;
+			margin-bottom: 20px;
+		}
+		.nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.nav ul li{
+			float:left;
+			padding: 15px;
+		}
+		.nav ul li a{
+			text-decoration: none;
+			font-size: 20px;
+			color:white;
+			cursor: pointer;
+		}
+		.nav ul li:hover{
+			background-color: #979ba1;
+		}
+		.levo{
+			float:left;
+			width: 75%;
+			box-sizing: border-box;
+			margin-right: 18px;
+		}
+		.desno{
+			float: left;
+			width: 24%;
+			box-sizing: border-box;
+		}
+		.section{
+			background-color: white;
+			padding: 10px;
+		}
+		aside{
+			background-color: white;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+		.popular{
+			background-color: white;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+		.follow{
+			background-color: white;
+			padding: 10px;
+		}
+		.row::after { /*stavlja footer na kraj*/
+  		content: "";
+  		display: table;
+  		clear: both;
+		}
+		footer{
+			text-align: center;
+			font-size: 30px;
+			background-color: gray;
+			padding: 10px;
+		}
+		@media screen and (max-width:800px){
+			.levo,.desno{
+				width: 100%;
+				padding: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<div class="header">
+	<h1 style="font-size: 50px;"><b>My website</b></h1>
+	<p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="nav">
+<ul>	
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul>
+</div>
+
+<div class="row">
+<div class="levo">
+<div class="section" style="margin-bottom: 20px;">
+	<h2>Title Heading</h2>
+	<p><small>Title desctiption,Dec 7,2027</small></p>
+	<img src="img.jpg" style="max-width: 100%;">
+	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+</div>
+<div class="section" style="margin-top: 10px;">
+	<h2>Title Heading</h2>
+	<p><small>Title desctiption,Dec 7,2027</small></p>
+	<img src="img.jpg" style="max-width: 100%;">
+	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+</div>
+</div>
+
+<div class="desno">
+<aside>
+	<h2>About me</h2>
+	<img src="img.jpg" style="max-width: 100%;">
+	<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+</aside>
+<div class="popular">
+	<h2>Popular post</h2>
+	<img src="img.jpg" style="max-width: 100%;">
+</div>
+<div class="follow">
+	<h2>Follow me</h2>
+	<p>Some text</p>
+</div>
+</div>
+</div>
+<footer><b>Footer</b></footer>
+</body>
+</html>
