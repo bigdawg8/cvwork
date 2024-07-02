@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+  class car{
+    constructor(name,year){
+      this.name = name;
+      this.year = year;
+    }
+    car_year(){
+      let date = new Date();
+      return date.getFullYear() - this.year;
+    }
+  }
+  class lambo extends car{
+    constructor(name,year,model){
+      super(name,year);
+      this.model = model;
+    }
+    show_model(){
+      return "My car name is " + this.name + " it is " + this.model + " and is " + this.car_year() + " old";
+    }
+  }
+  const urus = new lambo("Lamborghini",2022,"Urus");
+  document.getElementById('demo').innerHTML = urus.show_model();
+</script>
+
+
+</body>
+</html>

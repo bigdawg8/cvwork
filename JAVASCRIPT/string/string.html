@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT JS</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script type="text/javascript">
+  let string1 = "Ovo je string"; //string
+  let index = string1.search("je"); //search metoda
+  document.getElementById('demo').innerHTML = index;
+
+  let index1 = string1.indexOf("Ovo"); //index of
+  document.getElementById('demo1').innerHTML = index1;
+
+  let index2 = string1.match("ing"); //nalazi izlomljenu rec
+  document.getElementById('demo2').innerHTML = index2.length + " " +index2;
+
+  
+  document.getElementById('demo3').innerHTML = string1.includes("string"); //proverava da li rec postoji i vraca true
+
+  document.getElementById("demo4").innerHTML = string1.startsWith("world");//proverava da li pocinje sa rec
+
+</script>
+
+
+</body>
+</html>

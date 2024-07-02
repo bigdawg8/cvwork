@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body style="background-color: black;color: white;font-size: 25px;">
+<p id="demo"></p>
+<script type="text/javascript">
+    //funkcija je blueprint za kreiranje objekta
+    //umesto da napravis 1000 objekta posebno napravis funkciju i prodjes kroz vrenosti
+    //construcor predstavlja gradiliste po kome ce se praviti objekti tj."kopije" ove funkcije
+  function osoba(ime,prezime,godine,pol){
+    this.ime = ime;
+    this.prezime = prezime;
+    this.godine = godine;
+    this.pol = pol;
+  }
+  const ivan = new osoba("Ivan","Radojevic",22,"M");
+  let txt = "";
+  for(let i in ivan){
+    txt = txt + ivan[i] + " ";
+  }
+  document.getElementById('demo').innerHTML = txt;
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style type="text/css">
+    .forma {
+      background-color: #1eb8fa;
+      color: black;
+      font-family: arial;
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    input[type=text], input[type=email], input[type=password] {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      background-color: #dfe2f2;
+      color: white;
+      height: 40px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+    input[type=submit] {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border: none;
+      border-radius: 5px;
+      height: 40px;
+      color: white;
+      background-color: #1a30f0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+  <script type="text/javascript">
+    // Validacija forme
+    function validateForm() {
+      let fname = document.forms["myform"]["fname"].value;
+      let uname = document.forms["myform"]["uname"].value;
+      let mail = document.forms["myform"]["mail"].value;
+      let pass = document.forms["myform"]["pass"].value;
+      let cpass = document.forms["myform"]["cpass"].value;
+
+      if (fname == "" || uname == "" || mail == "" || pass == "" || cpass == "") {
+        alert("Molimo popunite sva polja.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="forma">
+    <h1 style="text-align: center;">Sign up</h1>
+    <form method="post" action="mailto:ivanradojevic0798@gmail.com" name="myform" onsubmit="return validateForm()">
+      <input type="text" placeholder=" Name" name="fname">
+      <input type="text" placeholder=" Username" name="uname">
+      <input type="email" placeholder=" Email" name="mail">
+      <input type="password" placeholder=" Password" name="pass">
+      <input type="password" placeholder=" Confirm Password" name="cpass">
+      <input type="submit" name="submit_dugme" value="Sign up">
+    </form>
+  </div>
+</body>
+</html>

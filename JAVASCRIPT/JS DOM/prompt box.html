@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+  <button onclick="funkcija()">Cuh</button>
+<p id="demo"></p>
+<script>
+  function funkcija(){
+    let txt = "";
+    let person = prompt("Enter your name cuh!","Candice Dick");
+    if(person == null || person == ""){
+      txt = "User canceled the prompt";
+    } 
+    else{
+      txt = "Hello " + person + " ! How are you cuhh?";
+    }
+    document.getElementById('demo').innerHTML = txt;
+  }
+</script>
+</body>
+</html>

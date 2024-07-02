@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+  const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  language:"",
+  set lang(lang){
+    this.language = lang;
+  }
+};
+ person.lang = "en";
+ document.getElementById('demo').innerHTML = person.language;
+</script>
+
+
+</body>
+</html>

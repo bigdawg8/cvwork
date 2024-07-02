@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script type="text/javascript">
+  //nestovani objekti
+  let osoba = { 
+    ime:"Ivan",
+    prezime:"Radojevic",
+    godine:22,
+    igrice: {
+      igrica1:"GTA",
+      igrica2:"Payday"
+    }
+  }
+  document.getElementById('demo').innerHTML = osoba.igrice.igrica1;
+</script>
+
+</body>
+</html>

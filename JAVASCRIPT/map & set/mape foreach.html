@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GOAT</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+    //mape
+    const voce = new Map([
+        ["jabuke", 200],
+        ["banane", 300]
+    ]);
+    let txt = "";
+    voce.forEach(function(value, key) {
+        txt = txt + key + "=" + value + "<br>";
+    });
+    document.getElementById('demo').innerHTML = txt;
+</script>
+</body>
+</html>

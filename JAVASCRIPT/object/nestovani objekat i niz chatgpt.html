@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+  // Nestovani objekat i niz - 2 for petlje za stampanje
+  let txt = "";
+  const osoba = {
+    ime: "Ivan",
+    prezime: "Radojevic",
+    godine: 22,
+    skola: [
+      { ime: "ETS Mija", godina: 2016 },
+      { ime: "VTS Nis", godina: 2020 }
+    ]
+  }
+  for (let i in osoba.skola) {
+    txt += "<h2>" + osoba.skola[i].ime + "</h2>";
+    txt += osoba.skola[i].godina + "<br>";
+  }
+  document.getElementById('demo').innerHTML = txt;
+</script>
+</body>
+</html>

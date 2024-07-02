@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+  <button onclick="funkcija()">Cuh</button>
+<p id="demo"></p>
+<script>
+  function funkcija(){
+    let txt;
+    if(confirm("Press a button cuh!")){
+      txt = "You pressed ok cuh";
+    }
+    else{
+      txt = "You pressed cancel cuh";
+    }
+    document.getElementById('demo').innerHTML = txt;
+  }
+</script>
+</body>
+</html>

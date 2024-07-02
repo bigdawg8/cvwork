@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+  <style>
+    div{
+      background-color: blue;
+      width: 200px;
+      height: 150px;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      vertical-align: middle;
+      line-height: 150px;
+    }
+  </style>
+</head>
+<body>
+ <div onmousedown="cuh()" onmouseup="cuhh()" id="div">
+  click me cuh
+ </div>
+ <script>
+  function cuh(){
+    document.getElementById('div').innerHTML = "Relese Me Cuh";
+    document.getElementById('div').style.backgroundColor = "red";
+  }
+  function cuhh(){
+    document.getElementById('div').innerHTML = "Thank u cuh";
+    document.getElementById('div').style.backgroundColor = "blue";
+  }
+ </script>
+</body>
+</html>

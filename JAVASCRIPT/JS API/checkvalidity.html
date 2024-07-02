@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOAT</title>
+</head>
+<body>
+<input type="number" id="number" min="10" max="50">
+<p id="demo"></p>
+<button onclick="funkcija()">click</button>
+<script type="text/javascript">
+  function funkcija(){
+    let broj = document.getElementById('number');
+    if(!broj.checkValidity()){
+      document.getElementById('demo').innerHTML = broj.validationMessage;
+    }
+    else{
+      document.getElementById('demo').innerHTML = "OK";
+    }
+  }
+</script>
+</body>
+</html>
